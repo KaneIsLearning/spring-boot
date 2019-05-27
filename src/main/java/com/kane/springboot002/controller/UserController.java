@@ -1,6 +1,7 @@
 package com.kane.springboot002.controller;
 
 import org.springframework.beans.factory.BeanFactory;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -23,6 +24,7 @@ public  class UserController {
     private ApplicationContext applicationContext;
     private AnnotationConfigApplicationContext annotationConfigApplicationContext;
     private ComponentScan componentScan;
+    private SpringBootApplication springBootApplication;
 
     @RequestMapping("/")
     public String index(){
