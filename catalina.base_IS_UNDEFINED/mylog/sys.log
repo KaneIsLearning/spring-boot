@@ -1,0 +1,7 @@
+2019-05-27 15:39:56,641 INFO (StartupInfoLogger.java:50)- Starting IoCTest on DESKTOP-5EMO5NE with PID 2348 (started by dell in D:\学习笔记\work\springboot-002)
+2019-05-27 15:39:56,648 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-05-27 15:39:56,648 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-27 15:40:00,760 INFO (StartupInfoLogger.java:59)- Started IoCTest in 4.302 seconds (JVM running for 5.142)
+2019-05-27 15:48:11,496 INFO (StartupInfoLogger.java:50)- Starting IoCTest on DESKTOP-5EMO5NE with PID 6068 (started by dell in D:\学习笔记\work\springboot-002)
+2019-05-27 15:48:11,497 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-27 15:48:15,141 INFO (StartupInfoLogger.java:59)- Started IoCTest in 3.826 seconds (JVM running for 4.541)
