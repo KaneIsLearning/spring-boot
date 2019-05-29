@@ -77,6 +77,6 @@ public class ProxyBean implements InvocationHandler {
         ClassFileTransformer classFileTransformer;
         HelloService helloService = new HelloServiceImpl();
         HelloService proxy =(HelloService) ProxyBean.getProxyBean(helloService,new MyInterceptor());
-        proxy.sayHello("麦克*格雷迪");
+        proxy.sayHello(null);
     }
 }
