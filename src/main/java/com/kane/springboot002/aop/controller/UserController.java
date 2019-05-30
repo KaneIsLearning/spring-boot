@@ -35,4 +35,11 @@ public class UserController {
         return user;
     }
 
+    @RequestMapping("/getUser")
+    @ResponseBody
+    public User getUser(int id){
+        User user = userService.findUser(id);
+        return user;
+    }
+
 }

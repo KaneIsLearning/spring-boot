@@ -2,8 +2,10 @@ package com.kane.springboot002.aop.service.impl;
 
 import com.kane.springboot002.aop.bean.User;
 import com.kane.springboot002.aop.service.UserService;
+import com.kane.springboot002.data.mapper.UserMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,6 +19,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
 
+    @Autowired
+    private UserMapper userMapper;
+
     private Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
     @Override
     public void printUser(User user) {
@@ -25,4 +30,10 @@ public class UserServiceImpl implements UserService {
         }
         logger.info("打印输出用户信息："+user);
     }
+
+    @Override
+    public User findUser(int id) {
+        return userMapper.findUserById(id);
+    }
+
 }

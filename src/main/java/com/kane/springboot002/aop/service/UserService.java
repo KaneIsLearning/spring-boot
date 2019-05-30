@@ -13,5 +13,16 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public interface UserService {
+    /**
+     *
+     * @param user
+     */
     void printUser(User user);
+
+    /**
+     * 通过用户id查询用户信息
+     * @param id
+     * @return
+     */
+    User findUser(int id);
 }

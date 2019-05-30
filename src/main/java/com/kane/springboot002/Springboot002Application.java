@@ -1,12 +1,14 @@
 package com.kane.springboot002;
 
 import com.kane.springboot002.aop.aspect.MyAspect;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.transaction.annotation.Transactional;
 
 @SpringBootApplication
+@MapperScan("com.kane.springboot002.data.mapper")
 public class Springboot002Application {
 
     //定义切面

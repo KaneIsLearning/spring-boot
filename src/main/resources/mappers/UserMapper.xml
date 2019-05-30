@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.kane.springboot002.data.mapper.UserMapper">
+    <select id="findUserById" resultType="com.kane.springboot002.aop.bean.User">
+      select
+        id,name,description
+      from
+        spring_boot_user
+      where
+        id=#{id}
+    </select>
+</mapper>
+
+
+
+
+
